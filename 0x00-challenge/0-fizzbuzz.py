@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-''' FizzBuzz '''
-
+""" FizzBuzz
+"""
 import sys
 
 
@@ -15,15 +15,15 @@ def fizzbuzz(n):
         return
 
     tmp_result = []
-    for idx in range(1, n + 1):
-        if (idx % 3) == 0 and (idx % 5) == 0:
+    for i in range(1, n + 1):
+        if (i % 3) == 0 and (i % 5) == 0:
             tmp_result.append("FizzBuzz")
-        elif (idx % 3) == 0:
+        elif (i % 3) == 0:
             tmp_result.append("Fizz")
-        elif (idx % 5) == 0:
+        elif (i % 5) == 0:
             tmp_result.append("Buzz")
         else:
-            tmp_result.append(str(idx))
+            tmp_result.append(str(i))
     print(" ".join(tmp_result))
 
 
